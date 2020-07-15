@@ -28,7 +28,7 @@ Security settings are not limited to specific equipment or operation system conf
 | Configuration | Disable unused features like ICP, HTCP and SNMP | ICP and HTCP ports are used to communicate with other caches in a hierarchy and in most cases we don’t need these ports open, specifically if we've disabled the cache. SNMP is used for monitoring, but in the same way we did with ICP and HTCP ports, if it is not required, disable it.
 
 ## How to examples
-This section contains examples to implement some of the recommendations cited before.
+This section contains examples to implement some of the recommendations cited before. This configuration must be put on squid.conf file
 
 **Disabling caching completely**
 ```
