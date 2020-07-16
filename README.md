@@ -43,7 +43,7 @@ http_port 172.16.0.15:9584
 **Setting a limit on the size of cached objects**
 ```
 maximum_object_size 4096 MB - Default value
-minimum_object_size 0 bytes - Default value
+minimum_object_size 0 KB - Default value
 ```
 
 **Configuring trustable name servers**
