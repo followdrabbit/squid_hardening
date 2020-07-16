@@ -19,7 +19,6 @@ Security settings are not limited to specific equipment or operation system conf
 | Configuration | Implement an authentication method. | Squid supports authentication and its usage is strongly encouraged. Various authentication modules such as NCSA, LDAP and NTLM are supported by Squid and referred to as helpers.
 | Configuration | Set a value to authenticate_ttl parameter | When authentication is used, the parameter authenticate_ttl defines how long Squid is to remember client authentication information. This option forces the client to re-authenticate himself after the specified period (TTL) has expired.
 | Configuration | Set a value to authenticate_ip_ttl parameter | The parameter authenticate_ip_ttl defines how long a client’s authentication should be bound to a particular IP address. The purpose of this parameter is to discourage people from sharing their passwords among themselves. The downside of using this parameter is it can inadvertently block legitimate access to some clients where IP addresses are subject to change regularly such as dialup users.
-| Configuration | Set a value to reply_body_max_size parameter | The reply_body_max_size option imposes a maximum size of a reply body. This option is very useful to prevent users from downloading large files such as mpeg video files.
 | Configuration | Set cache_effective_user and cache_effective_group parameters to dedicated sandbox user | The cache_effective_user and cache_effective_group options specify under which user and group Squid will be running. The defaults are set to user and group nobody. These values are to be changed to the dedicated (sandbox) user as recommended earlier.
 | Configuration | Change the default value to coredump_dir parameter | 	The coredump_dir is used to indicate where Squid is to save its coredump files. If someone should find the coredump directory in its default location (/ or /usr), that person would be able to fill the partition in which the coredump files are saved and cause a denial of service. Since these coredump files can get very huge, make sure you change this option to a directory outside a partition critical for system operation.
 | Configuration | Ensure that ignore_unknown_nameservers parameter is on | This option is on by default and should be left as such. 
@@ -89,11 +88,6 @@ authenticate_ttl 1 hour - Default value
 **Set a value to authenticate_ip_ttl**
 ```
 authenticate_ip_ttl 1 second - Default value
-```
-
-**Set a value to reply_body_max_size**
-```
-reply_body_max_size 10 MB - No limit is applied by default
 ```
 
 **Set cache_effective_user and cache_effective_group parameters to dedicated sandbox user**
