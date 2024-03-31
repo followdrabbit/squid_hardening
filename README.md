@@ -29,3 +29,15 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Acknowledgments
 
 Special thanks to the cybersecurity community for sharing knowledge and best practices that contribute to the development of this hardening guide.
+
+## About the Author
+
+- **Raphael de Carvalho Florencio**
+- Position: Information Security Architect
+- LinkedIn: [raphaelflorencio](https://linkedin.com/in/raphaelflorencio)
+
+I am passionate about challenges and always eager to learn new things. Currently, I am focusing on studying Artificial Intelligence, aiming not only to improve security processes and systems but also to seek efficiency and innovation in development areas. My interest in research and development motivates me to foster cultural changes, contributing to technological advancement in information security.
+
+## Contact
+
+To learn more or to get in touch with Raphael, please visit his LinkedIn profile.
